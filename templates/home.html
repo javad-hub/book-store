@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="{% static 'home.css'%}" rel="stylesheet">
+		<script src="#"></script>
+	</head>
+	<body class="body">
+		<div class="box">
+			<strong><p id="greeting">خوش آمدید</p></strong>
+			<ul class ="list">
+				<li> کتاب حافظه را تقویت می کند.</li>
+				<br/>
+				<li>نود درصد مردم کشور های توسعه یافته کتاب میخوانند.</li>
+				<br/>
+				<li> کتاب  بهترین دوست  شماست.</li>
+				<br/>
+				<li> کتاب ها فرهنگ جوامع را می سازند.</li>
+				<br/>
+				<li> کتاب در حال فراموشیست.</li>
+			</ul>
+			<br/><br/>
+			<div id="separator"></div>
+			<div class="books">
+				{% for book in object_list%}
+					<ul>
+						<li>{{ book.name}}</li>
+					</ul>
+				{% endfor%}
+			</div>
+		</div>
+	</body>
+</html>

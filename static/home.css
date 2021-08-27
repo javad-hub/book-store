@@ -1,0 +1,38 @@
+.body{
+	background-color: green;
+}
+.box{
+	border: solid white;
+	padding-bottom: 80em;
+	background-color: white;
+	margin: 200px;
+	margin-top: 40px;
+}
+
+#greeting{
+	text-align: center;
+	animation-name: greet;
+	font-size: xx-large;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+@keyframes greet {
+	0% {color: red;}
+	25% {color: blue;}
+	50% {color: yellow;}
+	75% {color: green;}
+	100% {color: pink;}
+}
+
+.list{
+	direction: rtl;
+	font-size: 20px;
+	padding-right: 100px;
+	margin-top: 4em;
+}
+#separator{
+	border-style: dashed;
+	border-color: lightblue;
+	margin-left: 5em;
+	margin-right: 5em;
+}
