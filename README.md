@@ -1,2 +1,2 @@
-# book-store
+# book-store 📘
 a simple bookstore website
