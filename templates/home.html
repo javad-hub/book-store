@@ -3,9 +3,26 @@
 <html>
 	<head>
 		<link href="{% static 'home.css'%}" rel="stylesheet">
-		<script src="#"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="{% static 'home.js'%}"></script>
 	</head>
 	<body class="body">
+		<div id="mySidepanel" class="sidepanel">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  			<a href="#">کتاب های بیشتر</a>
+  			<a href="#">سایت های دیگر</a>
+  			<a href="#">تماس با ما</a>
+		</div>
+		<div class="topnav">
+			<div class="search-container">
+				<form>
+					<input type="text" placeholder="جست و جو...">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+			<button class="openbtn" onclick="openNav()">&#9776; بیشتر</button>
+		</div>
+
 		<div class="box">
 			<strong><p id="greeting">خوش آمدید</p></strong>
 			<ul class ="list">
@@ -21,13 +38,15 @@
 			</ul>
 			<br/><br/>
 			<div id="separator"></div>
-			<div class="books">
-				{% for book in object_list%}
-					<ul>
-						<li>{{ book.name}}</li>
-					</ul>
-				{% endfor%}
+				<div class="container">
+					<img id="book_1" class="image" src="{% static '1.jpg'%}">
+					<img id="book_2" class="image" src="{% static '2.jpg'%}">
+					<img id="book_3" class="image" src="{% static '3.jpg'%}">
+					<div class="middle">
+						<div class="text">کتاب</div>
+					</div>
+				</div>
+
 			</div>
-		</div>
 	</body>
 </html>
