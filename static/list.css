@@ -1,0 +1,37 @@
+.caption{
+	margin-left: 6em;
+	padding: 4px;
+}
+
+.book{
+	border: 3px yellow double;
+	background-color: mintcream;
+	display: inline-block;
+	padding: 60px;
+	margin-left: 6em;
+	margin-top: 6px;
+}
+
+.body{
+	background-color: white;
+}
+
+.caption #detail{
+	text-decoration: none;
+	color: lightblue;
+	border: 1px blue solid;
+	padding: 3px;
+	border-radius: 1rem;
+}
+
+.caption #detail:hover{
+	background-color: blue;
+	color: gold;
+	transition: 0.5s;
+}
+
+.caption #detail{
+	margin-left: 17px;
+}
+
+

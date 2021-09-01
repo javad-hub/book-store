@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
+	<title>خانه</title>
 	<head>
 		<link href="{% static 'home.css'%}" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,16 +10,13 @@
 	<body class="body">
 		<div id="mySidepanel" class="sidepanel">
   			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  			<a href="#">کتاب های بیشتر</a>
+  			<a href="{% url 'home'%}">خانه</a>
+  			<a href="{% url 'list'%}">کتاب های بیشتر</a>
   			<a href="#">سایت های دیگر</a>
   			<a href="#">تماس با ما</a>
 		</div>
 		<div class="topnav">
 			<div class="search-container">
-				<form>
-					<input type="text" placeholder="جست و جو...">
-					<button type="submit"><i class="fa fa-search"></i></button>
-				</form>
 			</div>
 			<button class="openbtn" onclick="openNav()">&#9776; بیشتر</button>
 		</div>
@@ -47,6 +45,8 @@
 					</div>
 				</div>
 
+			</div>
+			<div class="footer">
 			</div>
 	</body>
 </html>

@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% load static%}
+{% block title%}جزءیات{% endblock title%}
+
+{% block content%}
+<link href="{% static 'detail.css'%}" rel="stylesheet">
+<body>
+	<div id="book">
+		<img src="{{book.image.url}}" width="220" height="250">
+		<figcaption> نام :{{book.name}}</figcaption>
+		<figcaption> نویسنده :{{book.author}}</figcaption>
+		<a href="{% url 'home'%}">بازگشت</a>
+	</div>
+</body>
+
+{% endblock content%}
