@@ -13,3 +13,6 @@ class ListPageView(ListView):
 class DetailPageView(DetailView):
 	model= Book
 	template_name = 'detail.html'
+
+class AddressPageView(TemplateView):
+	template_name = 'address.html'

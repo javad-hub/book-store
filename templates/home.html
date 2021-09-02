@@ -4,7 +4,6 @@
 	<title>خانه</title>
 	<head>
 		<link href="{% static 'home.css'%}" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="{% static 'home.js'%}"></script>
 	</head>
 	<body class="body">
@@ -13,7 +12,7 @@
   			<a href="{% url 'home'%}">خانه</a>
   			<a href="{% url 'list'%}">کتاب های بیشتر</a>
   			<a href="#">سایت های دیگر</a>
-  			<a href="#">تماس با ما</a>
+  			<a href="{% url 'address'%}">تماس با ما</a>
 		</div>
 		<div class="topnav">
 			<div class="search-container">
@@ -36,15 +35,12 @@
 			</ul>
 			<br/><br/>
 			<div id="separator"></div>
-				<div class="container">
+				<div class="books">
 					<img id="book_1" class="image" src="{% static '1.jpg'%}">
+					<figcaption></figcaption>
 					<img id="book_2" class="image" src="{% static '2.jpg'%}">
 					<img id="book_3" class="image" src="{% static '3.jpg'%}">
-					<div class="middle">
-						<div class="text">کتاب</div>
-					</div>
 				</div>
-
 			</div>
 			<div class="footer">
 			</div>

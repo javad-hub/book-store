@@ -12,15 +12,8 @@
   			<a href="{% url 'home'%}">خانه</a>
   			<a href="{% url 'list'%}">کتاب های بیشتر</a>
   			<a href="#">سایت های دیگر</a>
-  			<a href="#">تماس با ما</a>
+  			<a href="{% url 'address'%}">تماس با ما</a>
 		</div>
-		<div class="topnav">
-			<div class="search-container">
-				<form>
-					<input type="text" placeholder="جست و جو...">
-					<button type="submit"><i class="fa fa-search"></i></button>
-				</form>
-			</div>
 			<button class="openbtn" onclick="openNav()">&#9776; بیشتر</button>
 		</div>
 	{% block content%}
