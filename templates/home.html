@@ -1,5 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <html>
 	<title>خانه</title>
 	<head>
@@ -11,7 +12,7 @@
   			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   			<a href="{% url 'home'%}">خانه</a>
   			<a href="{% url 'list'%}">کتاب های بیشتر</a>
-  			<a href="#">سایت های دیگر</a>
+  			<a href="#site">سایت های دیگر</a>
   			<a href="{% url 'address'%}">تماس با ما</a>
 		</div>
 		<div class="topnav">
@@ -34,15 +35,24 @@
 				<li> کتاب در حال فراموشیست.</li>
 			</ul>
 			<br/><br/>
-			<div id="separator"></div>
-				<div class="books">
-					<img id="book_1" class="image" src="{% static '1.jpg'%}">
-					<figcaption></figcaption>
-					<img id="book_2" class="image" src="{% static '2.jpg'%}">
-					<img id="book_3" class="image" src="{% static '3.jpg'%}">
+			<div class="separator"></div>
+			<p id="new">جدیدترین ها</p>
+			<div class="image-container">
+    			<img src="http://lorempixel.com/300/200" />
+    			<div class="after">This is some content</div>
+			</div>
+  
+				<div class="separator"></div>
+				<div id="site">
+					<p id="p">دیگر سایت های ما:</p>
+					<a class="sites" href="#">کتابخانه</a>
+					<a class="sites" href="#">شهر کتاب</a>
+					<a class="sites" href="#">دنیای کتاب</a>
+					<a class="sites" href="#">کتاب اندیشان</a>
 				</div>
 			</div>
-			<div class="footer">
+			<div class='footer'>
+				<p id="copy">تمام حقوق سایت&copyمتعلق به کتاب است</p>
 			</div>
 	</body>
 </html>

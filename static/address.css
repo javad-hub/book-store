@@ -47,7 +47,23 @@
 	margin-top: 40px;
 }
 body{
-	background-image: url("5.jpg");
+	background-image: url("6.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+}
+
+#star{
+	direction: rtl;
+	font-size: 15px;
+	color: red;
+	margin-bottom: 0%;
+}
+#email{
+	margin-top: 0%;
+}
+
+#help{
+	direction: rtl;
+	color: red;
+	font-size: 15px;
 }
